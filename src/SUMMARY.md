@@ -15,3 +15,5 @@
 - [Chapter 5](./chapter_5/README.md)
     - [Modules](./chapter_5/modules.md)
     - [Crates](./chapter_5/crates.md)
+- [Chapter 6](./chapter_6/README.md)
+    - [Traits](./chapter_6/traits.md)
