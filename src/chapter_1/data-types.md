@@ -46,6 +46,7 @@ let is_positive = true; // boolean
 let character = 'A'; // character
 
 let tup: (i32, f64, char) = (500, 6.4, 'x'); // tuple
+let (city, population) = ("Kanpur", 3286000); // destructuring with tuple
 let arr = [1, 2, 3, 4, 5]; // array
 ```
 

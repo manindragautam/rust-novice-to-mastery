@@ -43,7 +43,24 @@ let x = x + 20; // Shadows the first x
 println!("x: {}", x); // P, effectively hiding it within that scoperints 30
 ```
 
-**5. Underscore Variables (_):**
+**5. Scope:**
+
+Block `{}` creates a new anonymous namespace scope. This means variables and other items declared within a block are only accessible within that block. When the block finishes execution, these local variables go out of scope and are no longer accessible.
+
+```rust
+let x = 10; // This x is in the outer scope
+
+{
+  let y = 20;  // This y is only accessible within this block
+  println!("Inside block: x = {} y = {}", x, y);
+}
+
+println!("Outside block: x = {}", x); // This line will print 10 (y is not accessible here)
+```
+
+Here, the inner block creates a new variable `y`. This `y` is separate from the outer `x`. You can access the outer `x` from within the block, but the inner `y` is not accessible outside the block.
+
+**6. Underscore Variables (_):**
 
 When you assign a value but don't intend to use the variable itself, you can use `_` as a placeholder to prevent compiler warnings about unused variables. 
 
@@ -52,7 +69,7 @@ let _unused_variable = 10; // Compiler warning about unused variable
 let _ = 10; // No warning because we explicitly tell the compiler to ignore it
 ```
 
-**6. Pattern Matching:**
+**7. Pattern Matching:**
 
 Pattern matching is a powerful Rust feature that allows you to bind values based on their structure. You can use patterns in `let` statements to destructure data into multiple bindings.
 
@@ -61,7 +78,7 @@ let (name, age) = ("Alice", 30);  // Destructuring a tuple into two bindings
 println!("Name: {}, Age: {}", name, age);
 ```
 
-**7. Constant Bindings (const):**
+**8. Constant Bindings (const):**
 
 Use the `const` keyword to declare constants. Constants have a fixed value at compile time and cannot be changed later. They must have a known data type and a value that can be determined at compile time.
 
