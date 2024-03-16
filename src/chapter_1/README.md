@@ -1,4 +1,4 @@
-# Chapter 1:
+# Chapter 1
 
 This chapter will equip you with the knowledge to:
 

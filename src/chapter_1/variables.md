@@ -34,15 +34,13 @@ x = 12; // This is allowed because x is mutable
 
 **4. Shadowing:**
 
-Rust allows you to create a new binding with the same name as an existing one within a specific scope. This is called shadowing. The new binding shadows the older one, effectively hiding it within that scope.
+Rust allows you to create a new binding with the same name as an existing one. This is called shadowing. The new binding shadows the older one.
 
 ```rust
 let x = 10;
-{
-  let x = 20; // Shadows the outer x within this block
-  println!("Inner x: {}", x);
-}
-println!("Outer x: {}", x); // Prints 10, outer x is not modified
+let x = x + 20; // Shadows the first x
+
+println!("x: {}", x); // P, effectively hiding it within that scoperints 30
 ```
 
 **5. Underscore Variables (_):**
