@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to Rust
 
 **What is Rust?**
 

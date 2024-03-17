@@ -1,6 +1,6 @@
 # Summary
 
-- [Introduction to Rust](./introduction.md)
+- [Introduction to Rust](./introduction_to_rust/README.md)
 - [Variables and Operators](./variables_and_operators/README.md)
     - [Declaring and assigning variables](./variables_and_operators/declaring_and_assigning_variables.md)
     - [Scalar and compound data types](./variables_and_operators/scalar_and_compound_data_types.md)
