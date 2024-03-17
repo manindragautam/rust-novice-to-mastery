@@ -38,33 +38,27 @@ Here's a breakdown of basic syntax and data types in Rust:
 **Basic Syntax:**
 
 - **Comments:**
-Lines starting with `//` are comments for explaining code (single line). Use `/- */` for multi-line comments.
+  Lines starting with `//` are comments for explaining code (single line). Use `/- */` for multi-line comments.
 - **Variables:**
-Declare variables with `let` keyword, followed by name and data type (e.g., `let age: u32 = 30;`). 
+  Declare variables with `let` keyword, followed by name and data type (e.g., `let age: u32 = 30;`).
 - **Constants:**
-Use `const` keyword for fixed values (e.g., `const PI: f64 = 3.14159;`).
+  Use `const` keyword for fixed values (e.g., `const PI: f64 = 3.14159;`).
 - **Statements:**
-Lines ending with a semicolon `;` are statements that execute code.
+  Lines ending with a semicolon `;` are statements that execute code.
 
 **Data Types:**
 
 - **Scalar Types:**
-Represent single values:
-    - Integers (signed `i8` `i16` `i32` `i64` `i128`, unsigned `u8` `u16` `u32` `u64` `u128`) for whole numbers.
-    - Floating-point (`f32`, `f64`) for numbers with decimals.
-    - Boolean (`bool`) for true or false values.
-    - Character (`char`) for a single character (supports Unicode).
+  Represent single values: - Integers (signed `i8` `i16` `i32` `i64` `i128`, unsigned `u8` `u16` `u32` `u64` `u128`) for whole numbers. - Floating-point (`f32`, `f64`) for numbers with decimals. - Boolean (`bool`) for true or false values. - Character (`char`) for a single character (supports Unicode).
 - **Compound Types:**
-Group related data:
-    - Tuples: Fixed-size ordered sequences of values (e.g., `let point = (1, 2.5);`).
-    - Arrays: Fixed-size collection of the same data type (less common due to ownership rules, use vectors instead).
-    - Strings: Collection of characters (`String` for mutable and `&str` for immutable slices of string data).
+  Group related data: - Tuples: Fixed-size ordered sequences of values (e.g., `let point = (1, 2.5);`). - Arrays: Fixed-size collection of the same data type (less common due to ownership rules, use vectors instead). - Strings: Collection of characters (`String` for mutable and `&str` for immutable slices of string data).
 
 **Ownership:**
 
 A key concept in Rust is ownership. Each value has a single owner that controls its lifetime. This ensures memory safety and prevents dangling pointers. When a variable goes out of scope, its ownership is transferred or the value is dropped (memory freed). Borrowing (`&`) allows temporary access to a value without ownership transfer.
 
 **More Resources:**
-  - The Rust Programming Language Book: [https://doc.rust-lang.org/book/](https://doc.rust-lang.org/book/)
-  - Rust By Example: [https://doc.rust-lang.org/beta/](https://doc.rust-lang.org/beta/)
-  - Official Rust Playground: [https://play.rust-lang.org/](https://play.rust-lang.org/)
+
+- The Rust Programming Language Book: [https://doc.rust-lang.org/book/](https://doc.rust-lang.org/book/)
+- Rust By Example: [https://doc.rust-lang.org/beta/](https://doc.rust-lang.org/beta/)
+- Official Rust Playground: [https://play.rust-lang.org/](https://play.rust-lang.org/)

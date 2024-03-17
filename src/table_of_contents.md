@@ -85,11 +85,13 @@
     - Atomics and fence instructions
 
 16. Low-level Systems Programming
+
     - Writing CLTs (command line tools)
     <!-- - Writing operating system kernels
     - Writing device drivers -->
 
 17. Web Development with Rust
+
     - Web frameworks (e.g., Actix, Rocket)
     - WebAssembly and Rust
 

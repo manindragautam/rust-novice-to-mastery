@@ -3,9 +3,10 @@
 Closures are a powerful feature in Rust that allow you to create anonymous functions that can capture the environment where they are defined. Let's explore them with examples at various skill levels:
 
 - **Basic Concept:**
-    - A closure is a block of code that can be treated like a function but doesn't have a name.
+
+  - A closure is a block of code that can be treated like a function but doesn't have a name.
     It uses `||` instead of `()` around input variables.
-    - It can capture variables from its surrounding scope and use them even after the surrounding function has finished executing.
+  - It can capture variables from its surrounding scope and use them even after the surrounding function has finished executing.
 
 - **Simple Closure:**
 
@@ -23,8 +24,8 @@ fn main() {
 }
 
 ```
-Here, the `increment` variable holds a closure that captures the `count` variable from the surrounding `main` function.
 
+Here, the `increment` variable holds a closure that captures the `count` variable from the surrounding `main` function.
 
 - **Closures with Arguments:**
 
@@ -60,8 +61,8 @@ Here, we use a closure with the `filter` method on a vector to find even numbers
 The closure borrows (`&`) the elements from the `numbers` vector.
 
 - **Closures and Iterators:**
-    - Closures are frequently used with iterators to define custom logic for processing collections.
-    - Explore advanced iterator methods like `map`, `fold`, and `any` to leverage closures for complex data manipulation.
+  - Closures are frequently used with iterators to define custom logic for processing collections.
+  - Explore advanced iterator methods like `map`, `fold`, and `any` to leverage closures for complex data manipulation.
 
 **Key Points:**
 

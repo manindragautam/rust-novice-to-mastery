@@ -1,10 +1,9 @@
-# Conditional statements
+## Conditional statements
 
 Here's a breakdown of conditional statements in Rust for control flow:
 
-
 - **`if` statement:**
-Executes code based on a condition.
+  Executes code based on a condition.
 
 ```rust
 fn main() {
@@ -16,9 +15,8 @@ fn main() {
 }
 ```
 
-
 - **`if` with `else`:**
-Executes one block of code if the condition is true, another if it's false.
+  Executes one block of code if the condition is true, another if it's false.
 
 ```rust
 fn main() {
@@ -32,9 +30,8 @@ fn main() {
 }
 ```
 
-
 - **`if` with `else if` chain:**
-Checks multiple conditions sequentially.
+  Checks multiple conditions sequentially.
 
 ```rust
 fn main() {
@@ -50,9 +47,8 @@ fn main() {
 }
 ```
 
-
 - **Nested `if` statements:**
-Create more complex decision-making logic.
+  Create more complex decision-making logic.
 
 ```rust
 fn main() {
@@ -72,7 +68,7 @@ fn main() {
 ```
 
 - **Match expressions:**
-Powerful alternative to `if` statements for pattern matching (often used for enums).
+  Powerful alternative to `if` statements for pattern matching (often used for enums).
 
 ```rust
 enum Day {
@@ -95,9 +91,8 @@ fn main() {
 }
 ```
 
-
 - **Short circuiting:**
-Use `&&` (logical AND) and `||` (logical OR) for short-circuiting logic. The evaluation stops once the result is known.
+  Use `&&` (logical AND) and `||` (logical OR) for short-circuiting logic. The evaluation stops once the result is known.
 
 ```rust
 fn main() {

@@ -4,3 +4,10 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Rust: Novice to Mastery"
+
+[output.html]
+git-repository-url = "https://github.com/manindragautam/rust-novice-to-mastery"
+git-repository-icon = "fa-github"
+
+[output.html.print]
+enable = false

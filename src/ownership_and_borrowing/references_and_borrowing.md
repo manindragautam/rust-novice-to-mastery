@@ -3,8 +3,8 @@
 References and borrowing are cornerstones of Rust's ownership system, allowing you to access data without taking ownership. Let's explore them with examples at various skill levels:
 
 - **Basic Concept:**
-    - A reference (`&`) provides a temporary way to access data owned by another variable.
-    - You can think of it as a pointer to the actual value.
+  - A reference (`&`) provides a temporary way to access data owned by another variable.
+  - You can think of it as a pointer to the actual value.
 
 ```rust
 fn main() {
@@ -16,8 +16,8 @@ fn main() {
 ```
 
 - **Moving:**
-    - When assigning a value to another variable using `=` (move semantics), ownership is transferred.
-    - The original variable can no longer be used.
+  - When assigning a value to another variable using `=` (move semantics), ownership is transferred.
+  - The original variable can no longer be used.
 
 ```rust
 fn main() {
@@ -29,7 +29,7 @@ fn main() {
 ```
 
 - **Copying:**
-    - In some cases (e.g., primitive types like integers), Rust copies the value when assigning. Both variables own independent copies.
+  - In some cases (e.g., primitive types like integers), Rust copies the value when assigning. Both variables own independent copies.
 
 ```rust
 fn main() {
@@ -42,7 +42,7 @@ fn main() {
 ```
 
 - **Immutable Borrowing:**
-    - References are immutable by default. You can't modify the borrowed data through the reference.
+  - References are immutable by default. You can't modify the borrowed data through the reference.
 
 ```rust
 fn main() {
@@ -56,7 +56,7 @@ fn main() {
 ```
 
 - **Mutable Borrowing:**
-    - Use `&mut` for mutable borrowing, allowing changes to the borrowed data. However, only one mutable borrow can exist at a time.
+  - Use `&mut` for mutable borrowing, allowing changes to the borrowed data. However, only one mutable borrow can exist at a time.
 
 ```rust
 fn main() {
@@ -71,7 +71,7 @@ fn main() {
 ```
 
 - **Dangling References:**
-    - Be cautious of "dangling references" that point to deallocated memory. This occurs if the original owner goes out of scope before the reference is finished using it.
+  - Be cautious of "dangling references" that point to deallocated memory. This occurs if the original owner goes out of scope before the reference is finished using it.
 
 ```rust
 fn main() {

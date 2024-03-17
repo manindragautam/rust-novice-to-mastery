@@ -3,8 +3,8 @@
 Structs are fundamental building blocks in Rust for creating custom data types that group related values together. Let's explore them with examples at various skill levels:
 
 - **Basic Concept:**
-    - A struct is a user-defined type that bundles data fields of different types under a single name.
-    - It's similar to a class in other languages but without methods (functions associated with the struct).
+  - A struct is a user-defined type that bundles data fields of different types under a single name.
+  - It's similar to a class in other languages but without methods (functions associated with the struct).
 
 ```rust
 struct Person {
@@ -22,7 +22,7 @@ fn main() {
 ```
 
 - **Updating Struct Fields:**
-    - Struct fields can be modified after creation (except when using `const` for constant values).
+  - Struct fields can be modified after creation (except when using `const` for constant values).
 
 ```rust
 struct Person {
@@ -41,7 +41,7 @@ fn main() {
 
 - **Methods**
 
-    - You can define methods on structs using the `impl` (implementation) block:
+  - You can define methods on structs using the `impl` (implementation) block:
 
 ```rust
 struct Person {
@@ -69,7 +69,7 @@ fn main() {
 ```
 
 - **Unit Structs:**
-    - Structs with no fields are called unit structs and are useful for markers or placeholders.
+  - Structs with no fields are called unit structs and are useful for markers or placeholders.
 
 ```rust
 struct Empty; // Unit struct with no fields
@@ -80,7 +80,7 @@ fn main() {
 ```
 
 - **Tuple Structs:**
-    - Structs with named fields that behave similarly to tuples.
+  - Structs with named fields that behave similarly to tuples.
 
 ```rust
 struct Point(i32, i32); // Tuple struct with x and y coordinates

@@ -1,4 +1,4 @@
 # Control Flow
 
-- Conditional statements (if, else, else if)
-- Loops (loop, while, for)
+- Make decisions and guide program flow with conditional statements.
+- Employ loops to automate repetitive tasks efficiently.

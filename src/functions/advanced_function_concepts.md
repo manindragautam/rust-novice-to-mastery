@@ -5,11 +5,11 @@ Now that you've grasped the fundamentals of functions, let's delve into more adv
 **1. Generic Functions:**
 
 - **Concept:**
-Define functions that can work with different data types by using placeholders.
+  Define functions that can work with different data types by using placeholders.
 - **Syntax:**
-Use angle brackets `<>` to define type parameters (`T`).
+  Use angle brackets `<>` to define type parameters (`T`).
 - **Use Cases:**
-Write reusable functions that operate on various data types without code duplication.
+  Write reusable functions that operate on various data types without code duplication.
 
 ```rust
 fn max<T: PartialOrd>(a: T, b: T) -> T {
@@ -30,11 +30,11 @@ fn main() {
 **2. Iterators:**
 
 - **Concept:**
-Provide a way to efficiently step through elements in a collection (like arrays, vectors).
+  Provide a way to efficiently step through elements in a collection (like arrays, vectors).
 - **Traits:**
-`Iterator` trait defines the protocol for iteration.
+  `Iterator` trait defines the protocol for iteration.
 - **Use Cases:**
-Process elements in collections one by one using methods like `next()`, `for` loops.
+  Process elements in collections one by one using methods like `next()`, `for` loops.
 
 ```rust
 fn main() {

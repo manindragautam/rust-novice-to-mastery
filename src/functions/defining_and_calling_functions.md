@@ -3,8 +3,8 @@
 Functions are fundamental building blocks in Rust that encapsulate reusable code blocks. Here's a comprehensive guide with examples at various skill levels:
 
 - **Function declaration:**
-    - Uses the `fn` keyword followed by the function name, parentheses for arguments, and an arrow (`->`) specifying the return type (if any).
-    - The code block within curly braces `{}` defines the function's body.
+  - Uses the `fn` keyword followed by the function name, parentheses for arguments, and an arrow (`->`) specifying the return type (if any).
+  - The code block within curly braces `{}` defines the function's body.
 
 ```rust
 fn say_hello() -> String {
@@ -18,8 +18,8 @@ fn main() {
 ```
 
 - **Function arguments:**
-    - Pass values to functions as arguments within parentheses.
-    - Arguments are typed, like variables.
+  - Pass values to functions as arguments within parentheses.
+  - Arguments are typed, like variables.
 
 ```rust
 fn greet(name: &str) {
@@ -32,7 +32,7 @@ fn main() {
 ```
 
 - **Return values:**
-    - Use the `return` keyword to send a value back from the function.
+  - Use the `return` keyword to send a value back from the function.
 
 ```rust
 fn add(x: i32, y: i32) -> i32 {
@@ -46,7 +46,7 @@ fn main() {
 ```
 
 - **Multiple arguments:**
-    - Functions can have multiple arguments of different types.
+  - Functions can have multiple arguments of different types.
 
 ```rust
 fn calculate_area(width: f64, height: f64) -> f64 {
@@ -60,7 +60,7 @@ fn main() {
 ```
 
 - **Function borrowing:**
-    - Use references (`&`) to borrow data from other parts of your program without ownership transfer.
+  - Use references (`&`) to borrow data from other parts of your program without ownership transfer.
 
 ```rust
 fn print_slice(data: &[i32]) { // Takes a slice of integers (& indicates reference)
@@ -76,7 +76,7 @@ fn main() {
 ```
 
 - **Closures:**
-    - Anonymous functions that can capture the environment where they are defined.
+  - Anonymous functions that can capture the environment where they are defined.
 
 ```rust
 fn main() {
@@ -93,7 +93,7 @@ fn main() {
 ```
 
 - **Higher-order functions:**
-    - Functions that take other functions as arguments or return functions.
+  - Functions that take other functions as arguments or return functions.
 
 ```rust
 fn add(x: i32, y: i32) -> i32 {

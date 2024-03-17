@@ -3,8 +3,8 @@
 Traits are a fundamental concept in Rust that define behavior (methods) that different types can implement. They promote code reusability, abstraction, and polymorphism. Let's explore them with examples at various skill levels:
 
 - **Basic Idea:**
-    - A trait is like a blueprint that outlines functionalities (functions) that types can adhere to.
-    - It doesn't contain any implementation details, just the expected behavior.
+  - A trait is like a blueprint that outlines functionalities (functions) that types can adhere to.
+  - It doesn't contain any implementation details, just the expected behavior.
 
 ```rust
 trait Printable {
@@ -19,8 +19,8 @@ fn main() {
 ```
 
 - **Implementing Traits:**
-    - Types can implement a trait by using the `impl` keyword.
-    - The implementation provides the actual code for the methods defined in the trait.
+  - Types can implement a trait by using the `impl` keyword.
+  - The implementation provides the actual code for the methods defined in the trait.
 
 ```rust
 trait Printable {
@@ -45,8 +45,8 @@ fn main() {
 ```
 
 - **Trait Bounds:**
-    - When defining functions or methods, you can specify trait bounds using `where` clauses.
-    - This ensures that only types that implement the required trait can be used.
+  - When defining functions or methods, you can specify trait bounds using `where` clauses.
+  - This ensures that only types that implement the required trait can be used.
 
 ```rust
 use std::fmt::Display;
@@ -80,7 +80,7 @@ fn main() {
 ```
 
 - **Default Traits:**
-    - Define default implementations for trait methods if desired.
+  - Define default implementations for trait methods if desired.
 
 ```rust
 trait Printable {
@@ -108,8 +108,8 @@ fn main() {
 ```
 
 - **Associated Types:**
-    - Associated types provide flexibility in trait implementations by allowing them to define the specific type for calculations or data structures based on the implementing type.
-    - The concrete type for the associated type is specified in the impl block for the trait.
+  - Associated types provide flexibility in trait implementations by allowing them to define the specific type for calculations or data structures based on the implementing type.
+  - The concrete type for the associated type is specified in the impl block for the trait.
 
 ```rust
 trait Shape {
@@ -176,4 +176,4 @@ fn main() {
 ```
 
 - **Trait Objects (Dynamic Dispatch):**
-    - Use trait objects (`dyn Trait`) for polymorphism with types that don't know the specific trait at compile time.
+  - Use trait objects (`dyn Trait`) for polymorphism with types that don't know the specific trait at compile time.

@@ -1,8 +1,8 @@
 ## Generic types and functions
 
 - **Basic Idea:**
-    - Imagine a function that can work with numbers (integers, floats) or strings. Generics make this possible.
-    - We use placeholders like `<T>` to represent unknown types.
+  - Imagine a function that can work with numbers (integers, floats) or strings. Generics make this possible.
+  - We use placeholders like `<T>` to represent unknown types.
 
 ```rust
 fn get_value<T>(value: T) -> T {
@@ -19,7 +19,7 @@ fn main() {
 ```
 
 - **Multiple Generic Types:**
-    - Functions can have multiple generic type parameters.
+  - Functions can have multiple generic type parameters.
 
 ```rust
 struct Pair<T, U> {
@@ -43,7 +43,7 @@ fn main() {
 ```
 
 - **Where Clauses:**
-    - Add additional constraints on generic types for more control.
+  - Add additional constraints on generic types for more control.
 
 ```rust
 fn sum_all<T>(list: &[T]) -> Option<T>

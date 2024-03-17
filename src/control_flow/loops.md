@@ -1,9 +1,9 @@
 ## Loops
 
-Loops are essential for repeating code blocks based on a condition. Let's explore different looping constructs in Rust with working examples at various skill levels:
+Loops are essential for repeating code blocks based on a condition.
 
 - **`loop` statement:**
-Executes a block of code repeatedly until you explicitly break out of it.
+  Executes a block of code repeatedly until you explicitly break out of it.
 
 ```rust
 fn main() {
@@ -21,7 +21,7 @@ fn main() {
 ```
 
 - **`while` loop:**
-Executes a block of code as long as a condition remains true.
+  Executes a block of code as long as a condition remains true.
 
 ```rust
 fn main() {
@@ -35,7 +35,7 @@ fn main() {
 ```
 
 - **`for` loop:**
-Iterates over elements in a collection (e.g., arrays, vectors).
+  Iterates over elements in a collection (e.g., arrays, vectors).
 
 ```rust
 fn main() {
@@ -48,7 +48,7 @@ fn main() {
 ```
 
 - **`for` loop with range syntax:**
-Iterates over a range of values.
+  Iterates over a range of values.
 
 ```rust
 fn main() {
@@ -59,8 +59,8 @@ fn main() {
 ```
 
 - **Loop control flow:**
-    - `break` statement: Exits the loop prematurely from within the loop body.
-    - `continue` statement: Skips the current iteration and moves to the next one.
+  - `break` statement: Exits the loop prematurely from within the loop body.
+  - `continue` statement: Skips the current iteration and moves to the next one.
 
 ```rust
 fn main() {
@@ -78,7 +78,7 @@ fn main() {
 ```
 
 - **`while let` loop:**
-Combines pattern matching with loop conditions.
+  Combines pattern matching with loop conditions.
 
 ```rust
 enum Message {
@@ -98,7 +98,7 @@ fn main() {
 ```
 
 - **Infinite loops:**
-Be cautious with `loop` statements to avoid infinite loops. Use conditions or break statements to ensure termination.
+  Be cautious with `loop` statements to avoid infinite loops. Use conditions or break statements to ensure termination.
 
 - **Advanced Loops:**
-Explore iterator adapters like `map`, `filter`, `fold` for concise and expressive data processing within loops. Refer to the Rust documentation on iterators: [https://doc.rust-lang.org/std/iter/trait.Iterator.html](https://doc.rust-lang.org/std/iter/trait.Iterator.html).
+  Explore iterator adapters like `map`, `filter`, `fold` for concise and expressive data processing within loops. Refer to the Rust documentation on iterators: [https://doc.rust-lang.org/std/iter/trait.Iterator.html](https://doc.rust-lang.org/std/iter/trait.Iterator.html).

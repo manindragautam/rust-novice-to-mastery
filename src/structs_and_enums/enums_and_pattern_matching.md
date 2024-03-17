@@ -1,10 +1,10 @@
 ## Enums and pattern matching
 
-Enums and pattern matching are powerful tools in Rust for defining sets of possible values and handling them efficiently. 
+Enums and pattern matching are powerful tools in Rust for defining sets of possible values and handling them efficiently.
 
 - **Enums (Enumerations):**
-    - Define a set of named constants (variants) that belong to a single type.
-    - Useful for representing a finite set of possibilities.
+  - Define a set of named constants (variants) that belong to a single type.
+  - Useful for representing a finite set of possibilities.
 
 ```rust
 enum TrafficLight {
@@ -20,8 +20,8 @@ fn main() {
 ```
 
 - **Pattern Matching (Basic):**
-    - A way to compare a value against different possible variants of an enum.
-    - Similar to a `switch` statement in other languages.
+  - A way to compare a value against different possible variants of an enum.
+  - Similar to a `switch` statement in other languages.
 
 ```rust
 enum TrafficLight {
@@ -42,7 +42,7 @@ fn main() {
 ```
 
 - **Data with Variants:**
-    - Enums can hold different types of data associated with each variant.
+  - Enums can hold different types of data associated with each variant.
 
 ```rust
 enum User {
@@ -63,7 +63,7 @@ fn main() {
 ```
 
 - **Wildcard Variant (`_`):**
-    - Use the `_` variant to catch all unmatched cases in the `match` expression.
+  - Use the `_` variant to catch all unmatched cases in the `match` expression.
 
 ```rust
 enum Coin {
@@ -83,7 +83,7 @@ fn main() {
 ```
 
 - **Matching Ranges and Values:**
-    - Use pattern matching with ranges and values for more specific checks.
+  - Use pattern matching with ranges and values for more specific checks.
 
 ```rust
 enum Grade {

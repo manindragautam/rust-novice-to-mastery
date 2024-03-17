@@ -3,9 +3,9 @@
 Lifetimes are a powerful concept in Rust's ownership system. They ensure that borrowed data (`&` or `&mut`) remains valid for as long as the reference using it is in scope. Let's explore them with examples:
 
 - **Basic Idea:**
-    - Lifetimes are annotations (like `'a`) that specify the lifetime of references.
-    - They guarantee that the borrowed data lives at least as long as the reference itself.
 
+  - Lifetimes are annotations (like `'a`) that specify the lifetime of references.
+  - They guarantee that the borrowed data lives at least as long as the reference itself.
 
 - **Explicit Lifetimes:**
 
@@ -27,11 +27,12 @@ Here, We explicitly define a lifetime `'a` for both references in the `longest` 
 This ensures that both `string1` and `string2` (the borrowed data) live at least as long as the returned reference (`longest_string`).
 
 - **Lifetime Elision:**
-    - In many cases, Rust can infer lifetimes automatically (lifetime elision).
-    - However, understanding how lifetimes work helps you write more concise and efficient code in complex scenarios.
+
+  - In many cases, Rust can infer lifetimes automatically (lifetime elision).
+  - However, understanding how lifetimes work helps you write more concise and efficient code in complex scenarios.
 
 - **Static Lifetime (`'static`):**
-    - A special lifetime meaning the data will always be valid, like string literals.
+  - A special lifetime meaning the data will always be valid, like string literals.
 
 ```rust
 fn get_hello_message() -> &'static str { // Borrowing a string literal with a static lifetime
