@@ -1,4 +1,4 @@
-## Modules
+## Organizing code with modules
 
 Modules in Rust are a way to organize code within a crate (we'll cover crates shortly). They allow you to group related functionality together and control the visibility and privacy of items (functions, structs, enums, etc.).
 
@@ -6,7 +6,7 @@ Modules in Rust are a way to organize code within a crate (we'll cover crates sh
 
 You can define a module using the `mod` keyword. Here's an example of creating a module named `math` inside the `main.rs` file:
 
-```rust
+```rust,noplaypen
 // main.rs
 mod math;
 
@@ -17,7 +17,7 @@ fn main() {
 
 The contents of the `math` module are typically placed in a separate file named `math.rs` within the same directory:
 
-```rust
+```rust,noplaypen
 // math.rs
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
@@ -28,7 +28,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 
 By default, items in a module are private and can only be accessed within the same module. To make an item public and accessible from other modules or crates, you need to use the `pub` keyword:
 
-```rust
+```rust,noplaypen
 // math.rs
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
@@ -48,13 +48,13 @@ Modules can be nested inside other modules to create a hierarchical structure:
 ```rust
 // main.rs
 mod math {
-    mod arithmetic {
+    pub mod arithmetic {
         pub fn add(a: i32, b: i32) -> i32 {
             a + b
         }
     }
 
-    mod trigonometry {
+    pub mod trigonometry {
         pub fn sin(angle: f64) -> f64 {
             angle.sin()
         }
@@ -71,13 +71,13 @@ fn main() {
 
 To access items from a module, you can use the module path syntax:
 
-```rust
+```rust,noplaypen
 math::arithmetic::add(2, 3);
 ```
 
 Alternatively, you can bring specific items into scope using the `use` keyword:
 
-```rust
+```rust,noplaypen
 use math::arithmetic::add;
 
 fn main() {

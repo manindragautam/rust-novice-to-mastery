@@ -1,4 +1,4 @@
-## Crates
+## Creating and using crates
 
 A crate in Rust is a binary or library that provides some functionality. It can be composed of multiple modules and is the highest level of code organization in Rust.
 
@@ -28,7 +28,7 @@ rand = "0.8.5"
 
 Then, you can import items from the crate using the `use` keyword:
 
-```rust
+```rust,noplaypen
 use rand::Rng;
 
 fn main() {
