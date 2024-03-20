@@ -1,5 +1,7 @@
 # Rust: Novice to Mastery 📚
 
+![Cover](./cover.jpeg)
+
 The primary purpose of this repository is to document my progress, learning experiences, and insights gained while delving into Rust. Through this book, I aim to create a comprehensive resource that covers various aspects of Rust programming, from novice level to mastery level.
 
 ## What's Inside
