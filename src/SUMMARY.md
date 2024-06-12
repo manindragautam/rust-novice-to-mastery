@@ -13,6 +13,7 @@
 - [Strings](./strings/README.md)
 - [Arrays / Lists](./arrays/README.md)
 - [Maps / Dictionaries](./hashmaps/README.md)
+- [Linked Lists](./linked_lists/README.md)
 - [Ownership and Borrowing](./ownership_and_borrowing/README.md)
   - [References and borrowing](./ownership_and_borrowing/references_and_borrowing.md)
   - [Lifetimes](./ownership_and_borrowing/lifetimes.md)
@@ -27,3 +28,5 @@
 - [Modules and Crates](./modules_and_crates/README.md)
   - [Organizing code with modules](./modules_and_crates/organizing_code_with_modules.md)
   - [Creating and using crates](./modules_and_crates/creating_and_using_crates.md)
+- [Data Structures](./data-structures/README.md)
+  - [Array](./data-structures/array.md)

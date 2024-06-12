@@ -1,5 +1,32 @@
 **Novice Level:**
 
+- Comments
+- Declaration convention for different data types
+- const, let, static variables
+- integers, floats, chars
+- tuples, arrays
+- vec
+- type conversions, From and Into for complex type conversion
+- struct, impl
+- loop, for, while, iter, rev
+- variable assignment in loop or control flow, e.g. if let Some(x) = vect.pop()
+- function, module
+- ownership, scope and lifetime
+
+Basic data types:
+Scalar:
+- numbers
+- string
+- date
+- boolean
+- characters
+Compound:
+- array
+- tuple
+
+Custom data types:
+- struct
+
 1. Introduction to Rust
    - History and philosophy of Rust
    - Installing Rust and setting up the development environment
